@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/menu_bnv_home"
+        android:title="홈"
+        android:icon="@drawable/ic_action_home"/>
+
+    <item android:id="@+id/menu_bnv_culture"
+        android:title="문화시설"
+        android:icon="@drawable/ic_action_culture"/>
+
+    <item android:id="@+id/menu_bnv_dinnigroom"
+        android:title="식당"
+        android:icon="@drawable/ic_action_dinning"/>
+
+    <item android:id="@+id/menu_bnv_favorite"
+        android:title="즐겨찾기"
+        android:icon="@drawable/ic_action_favorite"/>
+</menu>

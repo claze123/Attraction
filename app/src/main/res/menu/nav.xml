@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_copyright"
+        android:title="저작물명 : 코트라 손글씨체"/>
+
+    <item android:id="@+id/menu_copyright2"
+        android:title="저작(권)자 : KOTRA"/>
+
+    <item android:id="@+id/menu_copyright3"
+        android:title="출처 : 한국저작권위원회"/>
+
+    <item android:id="@+id/menu_copyright4"
+        android:title="이용조건 : OPEN"/>
+
+</menu>

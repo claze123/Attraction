@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_margin="4dp"
+    android:elevation="8dp"
+    app:contentPadding="12dp"
+    app:cardBackgroundColor="@color/recyclerbg">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_fav_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상호명"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_fav_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="신주소"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_fav_name"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@id/tv_fav_name"/>
+
+        <TextView
+            android:id="@+id/tv_fav_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_fav_address"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_alignLeft="@id/tv_fav_address"/>
+
+        <TextView
+            android:id="@+id/tv_fav_workday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운영일"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_fav_tel"
+            android:layout_alignLeft="@id/tv_fav_tel"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_fav_worktime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운영시간"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_fav_workday"
+            android:layout_alignLeft="@id/tv_fav_workday"
+            android:layout_marginBottom="20dp"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:elevation="8dp"
+    app:contentPadding="12dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/recyclerbg">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        
+        <TextView
+            android:id="@+id/tv_korean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한국어"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_margin="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/tv_korean"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:text="상호명"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="신주소"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_name"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@id/tv_name"/>
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_address"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_alignLeft="@id/tv_korean"/>
+
+
+        <TextView
+            android:id="@+id/tv_web"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹사이트"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_tel"
+            android:layout_alignLeft="@id/tv_tel"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_workday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운영일"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_web"
+            android:layout_alignLeft="@id/tv_tel"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_holiday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="휴무일"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_workday"
+            android:layout_alignLeft="@id/tv_workday"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_holiday"
+            android:layout_alignLeft="@id/tv_workday"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:text="운영시간"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_traffic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_alignLeft="@id/tv_workday"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:text="교통정보"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_culfavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_action_favorite" />
+
+        <ImageView
+            android:id="@+id/iv_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_board"
+            android:layout_toLeftOf="@id/fab"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/iv_culfavorite"
+            android:src="@drawable/ic_note"
+            app:backgroundTint="#D9CAFA"
+            app:fabSize="mini" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

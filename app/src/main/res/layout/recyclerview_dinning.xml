@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:contentPadding="12dp"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/recyclerbg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_dinniglanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한국어"
+            android:layout_margin="4dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/kotrasongeulssi"/>
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_favorite"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp" />
+        <ImageView
+            android:id="@+id/iv_board"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_board"
+            android:layout_toLeftOf="@id/fab"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"/>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            app:backgroundTint="#FFD9CAFA"
+            android:layout_toLeftOf="@id/iv"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_note"/>
+
+
+
+
+        <TextView
+            android:id="@+id/tv_dinningname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="식당이름"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_dinniglanguage"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_dinningmenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="대표메뉴"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_dinningname"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@id/tv_dinningname"/>
+
+        <TextView
+            android:id="@+id/tv_dinningaddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="신주소"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_dinningmenu"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@id/tv_dinningname"/>
+
+        <TextView
+            android:id="@+id/tv_dinningphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_dinningaddr"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@id/tv_dinningname"/>
+
+        <TextView
+            android:id="@+id/tv_dinningweb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="웹사이트"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_dinningphone"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@id/tv_dinningname"/>
+
+        <TextView
+            android:id="@+id/tv_dinningtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운영시간"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_dinningweb"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@id/tv_dinningname"/>
+
+        <TextView
+            android:id="@+id/tv_dinningtraffic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="교통정보"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/kotrasongeulssi"
+            android:layout_below="@id/tv_dinningtime"
+            android:layout_marginBottom="20dp"
+            android:layout_alignLeft="@id/tv_dinningname"/>
+
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
